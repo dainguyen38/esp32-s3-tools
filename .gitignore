@@ -1,0 +1,51 @@
+# ESP-IDF build output and local configuration
+/build/
+/build-*/
+/cmake-build-*/
+sdkconfig
+sdkconfig.old
+sdkconfig.bak
+managed_components/
+*.elf
+*.o
+*.obj
+
+# CMake and Ninja generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+cmake_install.cmake
+compile_commands.json
+build.ninja
+.ninja_deps
+.ninja_log
+
+# Local ESP-IDF and Python tooling
+/.cache/
+/.ccache/
+/.espressif/
+/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local credentials, diagnostics and flash backups
+.env
+.env.*
+!.env.example
+!.env.template
+/secrets/
+/flash-backups/
+*-backup.bin
+*.log
+
+# Editor and operating system files
+/.vscode/
+/.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
